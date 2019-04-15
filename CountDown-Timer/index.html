@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>COUNTDOWN TIMER</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="images/cdt.png" rel="icon" type="image/png">
+</head>
+
+<body>
+    <div id="main">
+        <div id="head">
+            <p id="main-title">COUNTDOWN TIMER</p>
+            <div id="main-logo"></div>
+        </div>
+        <div id="player">
+            <div id="settings" class="tab">
+                <p>HOURS</p>
+                <input id="hours" type="number" maxlength="2" max="24" min="0" value="00" required>
+                <p>MINUTES</p>
+                <input id="minutes" type="number" maxlength="2" max="60" min="0" value="00" required>
+                <p>SECONDS</p>
+                <input id="seconds" type="number" maxlength="2" max="60" min="0" value="00" required>
+                <input id="start" class="player-button" type="button" value="START">
+            </div>
+            <div id="countdown" class="tab">
+                <p id="counter"></p>
+                <input id="stop" class="player-button" type="button" value="STOP">
+            </div>
+        </div>
+        <div id="toast">Enter a valide time :)</div>
+    </div>
+    <audio id="alarm" src="audio/alarm.wav"></audio>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+    transition: .5s ease;
+}
+
+body {
+    color: white;
+    background-color: black;
+    height: 100%;
+    overflow: hidden;
+}
+
+#main {
+    text-align: center;
+    height: 100%;
+}
+
+#head {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background-color: #1d1d1d;
+}
+
+#main-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 10px;
+    background-image: url(images/cdt.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+}
+
+#main-title {
+    font-size: 4vw;
+}
+
+.tab {
+    padding: 10px;
+}
+
+#countdown {
+    height: calc(100vh - 70px);
+    width: 100%;
+    display: none;
+    background-color: #0684F2;
+}
+
+#settings {
+    height: calc(100vh - 70px);
+    width: 100%;
+    display: block;
+    background-color: #0444BF;
+}
+
+.player-button {
+    vertical-align: top;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid #0AAFF1;
+    background-color: #0AAFF1;
+    color: black;
+    margin-top: 10px;
+    transform: scale(1);
+    animation: show 1s ease;
+}
+
+.player-button:hover {
+    transform: scale(1.01);
+    border: 2px solid white;
+    color: white;
+}
+
+@keyframes show {
+    0% {
+        margin-top: 30px;
+        opacity: 0.75;
+    }
+    100% {
+        margin-top: 10px;
+        opacity: 1;
+    }
+}
+
+input[type="number"] {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    transform: scale(1);
+    animation: show 1s ease;
+    outline: none;
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#settings p {
+    margin-top: 10px;
+}
+
+#counter {
+    font-size: 15vw;
+    animation: show 1s ease;
+}
+
+#toast {
+    position: absolute;
+    bottom: 100px;
+    background-color: #111;
+    font-size: 20px;
+    padding: 10px;
+    height: 50px;
+    border-radius: 25px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation: popup 5s ease;
+}
+
+@keyframes popup {
+    0% {
+        opacity: 0.75;
+        transform: scale(.75);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(.5);
+    }
+}
