@@ -19,7 +19,7 @@ const alarm = document.getElementById("alarm");
 var count;
 function startTimer() {
 
-    if (hours.value > 23 || hours.value < 0 || minutes.value > 59 || minutes.value < 0 || seconds.value > 59 || seconds.value < 0) {
+    if (hours.value > 23 || hours.value < 0 || minutes.value > 59 || minutes.value < 0 || seconds.value > 59 || seconds.value < 0 || (hours.value == 0 && minutes.value == 0 && seconds.value == 0)) {
         showMessage();
     }
     else {
