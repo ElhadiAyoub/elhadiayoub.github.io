@@ -11,7 +11,6 @@ body {
     color: white;
     background-color: black;
     height: 100%;
-    overflow: hidden;
 }
 
 #main {
@@ -47,14 +46,14 @@ body {
 }
 
 #countdown {
-    height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
     width: 100%;
     display: none;
     background-color: #0684F2;
 }
 
 #settings {
-    height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
     width: 100%;
     display: block;
     background-color: #0444BF;
@@ -120,6 +119,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 
 #toast {
+    display: none;
     position: absolute;
     bottom: 100px;
     background-color: #111;

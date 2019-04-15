@@ -84,8 +84,12 @@ function stopTimer() {
 }
 
 function showMessage() {
+    toast.style.display = "block";
     toast.style.webkitAnimation = 'none';
     setTimeout(function () {
         toast.style.webkitAnimation = '';
     }, 10);
+    setTimeout(function () {
+        toast.style.display = "none";
+    }, 2000);
 }
