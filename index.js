@@ -4,7 +4,7 @@ var selectedIndex = 0;
 const links = [["RANDOM PASSWORD GENERATOR", "images/rpwg.png", "Random Password Generator is a simple (Mobile-Friendly) web page to create secure passwords in a lazy way :) ", "https://github.com/ElhadiAyoub/Random-Password-Generator", "projects/Random-Password-Generator/index.html"],
 ["COUNTDOWN TIMER", "images/cdt.png", "A simple Mobile-Friendly Countdown timer. ", "https://github.com/ElhadiAyoub/CountDown-Timer", "projects/CountDown-Timer/index.html"],
 ["COOL LOGIN FORM ANIMATED CHARACTER", "images/calfc.png", "A cool signup login form with an animated character that interacts with inputs of the user. ", "https://github.com/ElhadiAyoub/Cool-Login-Form-Animated-Character", "projects/Cool-Login-Form-Animated-Character/index.html"],
-["EXPLORER", "images/explorer.png", "It's a static GitHub Page used as Portfolio to Showcase projects. ()", "https://github.com/ElhadiAyoub/elhadiayoub.github.io", "#"]
+["EXPLORER", "images/explorer.png", "It's a static GitHub Page used as Portfolio to Showcase projects. ", "https://github.com/ElhadiAyoub/elhadiayoub.github.io", "#"]
 ];
 
 //Load grid elements in DOM
