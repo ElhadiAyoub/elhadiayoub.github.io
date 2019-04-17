@@ -38,7 +38,7 @@ body {
 }
 
 #main-title {
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 .tab {
@@ -155,6 +155,6 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 @media only screen and (min-width:1000px)
 {
 	#main-title{
-		font-size: 5px;
+		font-size: 2em;
 	}
 }
