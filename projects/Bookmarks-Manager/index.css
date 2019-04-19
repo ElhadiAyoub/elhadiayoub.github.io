@@ -116,6 +116,7 @@ body {
     min-height: 100%;
     color: #fff;
     background-image: linear-gradient(#000, #1d1d1d);
+    box-shadow: 0 0 50px 50px #444444;
     animation: popup .5s ease;
 }
 
