@@ -3,6 +3,7 @@ var selectedIndex = 0;
 //Database elements
 const links = [["RANDOM PASSWORD GENERATOR", "images/rpwg.png", "Random Password Generator is a simple (Mobile-Friendly) web page to create secure passwords in a lazy way :) ", "https://github.com/ElhadiAyoub/Random-Password-Generator", "projects/Random-Password-Generator/index.html"],
 ["COUNTDOWN TIMER", "images/cdt.png", "A simple Mobile-Friendly Countdown timer. ", "https://github.com/ElhadiAyoub/CountDown-Timer", "projects/CountDown-Timer/index.html"],
+["TODO LIST", "images/tdl.png", "A very basic Mobile-First ToDo List. ", "https://github.com/ElhadiAyoub/TODO-List", "projects/TODO-List/index.html"],
 ["COOL LOGIN FORM ANIMATED CHARACTER", "images/calfc.png", "A cool signup login form with an animated character that interacts with inputs of the user. ", "https://github.com/ElhadiAyoub/Cool-Login-Form-Animated-Character", "projects/Cool-Login-Form-Animated-Character/index.html"],
 ["BOOKMARKS MANAGER", "images/bm.png", "A cool bookmark manager that lets you easily add bookmarks and manage them.", "https://github.com/ElhadiAyoub/Bookmarks-Manager", "projects/Bookmarks-Manager/index.html"],
 ["EXPLORER", "images/explorer.png", "It's a static GitHub Page used as Portfolio to Showcase projects. ", "https://github.com/ElhadiAyoub/elhadiayoub.github.io", "#"]

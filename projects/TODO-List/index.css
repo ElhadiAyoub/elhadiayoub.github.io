@@ -1,0 +1,168 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+    transition: .5s ease;
+}
+
+body {
+    color: white;
+    background-color: black;
+    height: 100%;
+}
+
+#main {
+    text-align: center;
+    height: 100%;
+}
+
+#head {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background-color: #1d1d1d;
+}
+
+#main-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 10px;
+    background-image: url(images/tdl.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+}
+
+#main-title {
+    font-size: 4vw;
+}
+
+@keyframes show {
+    0% {
+        margin-top: 30px;
+        opacity: 0.75;
+    }
+    100% {
+        margin-top: 10px;
+        opacity: 1;
+    }
+}
+
+#toast {
+    display: none;
+    position: absolute;
+    bottom: 100px;
+    background-color: #111;
+    font-size: 20px;
+    padding: 10px;
+    height: 50px;
+    border-radius: 25px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation: popup 5s ease;
+}
+
+@keyframes popup {
+    0% {
+        opacity: 0.75;
+        transform: scale(.75);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(.5);
+    }
+}
+
+#player {
+    padding: 10px;
+}
+
+.player-input {
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    border: 0px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.player-button {
+    vertical-align: top;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid #0AAFF1;
+    background-color: #0AAFF1;
+    color: black;
+    margin-top: 10px;
+    transform: scale(1);
+    animation: show 1s ease;
+}
+
+.player-button:hover {
+    transform: scale(1.01);
+    border: 2px solid white;
+    color: white;
+}
+
+.item {
+    position: relative;
+    text-align: center;
+    border: 2px solid #222222;
+    border-radius: 25px;
+    margin-top: 10px;
+    height: 50px;
+    line-height: 50px;
+    font-size: .5em;
+}
+
+.item p {
+    font-size: 20px;
+}
+
+.marked {
+    background-color: #11b68c;
+}
+
+.item div {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.item div a {
+    margin-right: 15px;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.item div a:hover {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 1000px) {
+    #main-title {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .item div a {
+        margin-right: 15px;
+        cursor: pointer;
+        opacity: 1;
+    }
+}
