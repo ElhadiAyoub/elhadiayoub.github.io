@@ -58,6 +58,7 @@ function playerLoad(index) {
     link2.href = links[index][4];
 
     player.style.display = "block";
+    window.scrollTo(0, 0);
 }
 
 
