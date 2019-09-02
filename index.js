@@ -7,6 +7,7 @@ const links = [["RANDOM PASSWORD GENERATOR", "images/rpwg.png", "Random Password
 ["COOL LOGIN FORM ANIMATED CHARACTER", "images/calfc.png", "A cool signup login form with an animated character that interacts with inputs of the user. ", "https://github.com/ElhadiAyoub/Cool-Login-Form-Animated-Character", "projects/Cool-Login-Form-Animated-Character/index.html"],
 ["BOOKMARKS MANAGER", "images/bm.png", "A cool bookmark manager that lets you easily add bookmarks and manage them.", "https://github.com/ElhadiAyoub/Bookmarks-Manager", "projects/Bookmarks-Manager/index.html"],
 ["TEXT STROKE ANIMATION", "images/tsa.png", "SVG customized animated stroke effect using CSS.", "https://github.com/ElhadiAyoub/Text-Stroke-Animation", "projects/Text-Stroke-Animation/index.html"],
+["SINGLE PAGE LOGIN FORM", "images/splf.png", "A simple login UI that interacts with the user by dynamically rewriting the current page rather than loading entire new pages from a server.", "https://github.com/ElhadiAyoub/Single-Page-Login-Form", "projects/Single-Page-Login-Form/index.html"],
 ["EXPLORER", "images/explorer.png", "It's a static GitHub Page used as Portfolio to Showcase projects. ", "https://github.com/ElhadiAyoub/elhadiayoub.github.io", "#"]
 ];
 

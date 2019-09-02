@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/loader.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINGLE PAGE LOGIN FORM</title>
+    <link rel="icon" href="images/splf.png">
+    <style>
+
+        #login-container {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0 auto;
+            padding: 25px;
+            width: calc(100% - 50px);
+            max-width: 400px;
+            min-height: 550px;
+            background-color: #FFF;
+            box-shadow: 0px 0px 125px -100px #111, 0px 0px 50px 10px #00000011;
+            border-radius: 25px;
+        }
+
+        #login-message-box {
+            display: none;
+            position: relative;
+            width: 100%;
+            height: 50px;
+            line-height: 48px;
+            border-radius: 25px;
+            border: 2px solid #F55F55;
+            color: #F55F55;
+            margin-bottom: 25px;
+            padding-left: 20px;
+            animation: flash 1s 2;
+        }
+
+        @keyframes flash {
+            from {
+                background-color: #FFF;
+            }
+
+            to {
+                background-color: #FFAAAA;
+            }
+        }
+
+        #login-message-box p {
+            cursor: pointer;
+            position: absolute;
+            right: 0px;
+            width: 48px;
+            text-align: center;
+            border-radius: 50%;
+        }
+
+        #login-message-box p:hover {
+            background-color: #F55F5555;
+        }
+
+        #login-container form p {
+            font-weight: 700;
+        }
+
+        .login-input {
+            display: block;
+            padding-left: 25px;
+            width: 100%;
+            height: 50px;
+            margin-top: 20px;
+            border-radius: 25px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            border: 0px;
+            background-color: #EEF0F2;
+        }
+
+        .login-link {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            cursor: pointer;
+            color: #575757;
+        }
+
+        .login-button {
+            display: block;
+            width: 100%;
+            height: 50px;
+            margin-top: 20px;
+            border-radius: 25px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            border: 0px;
+            color: #FFF;
+            background-color: #1298F5;
+        }
+
+        .login-button:hover {
+            background-color: #1AAAFC;
+        }
+
+        #login-container form {
+            animation: show 1s ease;
+        }
+
+        @keyframes show {
+            from {
+                opacity: 0;
+                margin-top: 25px;
+            }
+
+            to {
+                opacity: 1;
+                margin-top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader-box">
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div id="login-container">
+        <div id="login-message-box">
+            <p id="login-message-close">⨉</p>
+            <div id="login-message">
+                Your error text here !
+            </div>
+        </div>
+        <div id="login-box">
+            <p id="active-tab" class="hidden">0</p>
+            <form>
+                <p>Sign in</p>
+                <input class="login-input" name="username" type="text" placeholder="USERNAME">
+                <input class="login-input" name="password" type="password" placeholder="PASSWORD">
+                <input class="login-button" type="submit" value="LOGIN">
+                <a class="register-link login-link">Create new account</a>
+                <a class="recover-link login-link">Forgot Password ?</a>
+            </form>
+        </div>
+
+        <div id="register-box">
+            <form>
+                <p>Create</p>
+                <input class="login-input" name="name" type="text" placeholder="NAME">
+                <input class="login-input" name="username" type="text" placeholder="USERNAME">
+                <input class="login-input" name="password" type="password" placeholder="PASSWORD">
+                <input class="login-input" name="email" type="text" placeholder="EMAIL">
+                <input class="login-button" type="submit" value="REGISTER">
+                <a class="login-link login-link">Already have an account</a>
+                <a class="recover-link login-link">Forgot Password ?</a>
+            </form>
+        </div>
+
+        <div id="recover-box">
+            <form>
+                <p>Reset</p>
+                <input class="login-input" name="username" type="text" placeholder="USERNAME">
+                <input class="login-button" type="submit" value="SEND EMAIL">
+                <a class="login-link login-link">Already have an account</a>
+                <a class="register-link login-link">Create new account</a>
+            </form>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

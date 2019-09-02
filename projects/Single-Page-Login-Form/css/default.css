@@ -1,0 +1,33 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+    outline: none;
+}
+
+html,
+body {
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+body *{
+    transition: .25s ease;
+}
+
+.wide{
+    width: 100%;
+    max-width: 1000px;
+}
+
+.centered {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
